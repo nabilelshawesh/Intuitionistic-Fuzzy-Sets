@@ -44,9 +44,9 @@ challenges.
 
 ## 👨‍🎓 Author
 
-Bachelor's Thesis Project by Nabil El Shawesh
-Department of Digital Systems
-University of Thessaly
+Bachelor's Thesis Project by Nabil El Shawesh\
+Department of Digital Systems\
+University of Thessaly\
 
 ------------------------------------------------------------------------
 
