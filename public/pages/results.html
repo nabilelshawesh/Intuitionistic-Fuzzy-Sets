@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET2 Test - Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/results.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">GET2 Test</a>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h1 class="text-center mb-4">Your Results</h1>
+                        
+                        <div class="overall-score mb-5">
+                            <h2 class="text-center mb-3">Overall Score</h2>
+                            <div class="progress overall-progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                            </div>
+                            <p class="text-center score-text">Your total score: <span id="total-score">0</span>/270</p>
+                        </div>
+
+                        <div class="categories">
+                            <h2 class="text-center mb-4">Analysis by Category</h2>
+                            
+                            <div class="category-item mb-4">
+                                <h3>Need for Achievement</h3>
+                                <div class="progress category-progress mb-2">
+                                    <div class="progress-bar bg-success" id="achievement-progress" role="progressbar" style="width: 0%"></div>
+                                </div>
+                                <p class="category-score">Score: <span id="achievement-score">0</span>/50</p>
+                            </div>
+
+                            <div class="category-item mb-4">
+                                <h3>Need for Autonomy/Independence</h3>
+                                <div class="progress category-progress mb-2">
+                                    <div class="progress-bar bg-info" id="autonomy-progress" role="progressbar" style="width: 0%"></div>
+                                </div>
+                                <p class="category-score">Score: <span id="autonomy-score">0</span>/50</p>
+                            </div>
+
+                            <div class="category-item mb-4">
+                                <h3>Creative Tendency</h3>
+                                <div class="progress category-progress mb-2">
+                                    <div class="progress-bar bg-warning" id="creativity-progress" role="progressbar" style="width: 0%"></div>
+                                </div>
+                                <p class="category-score">Score: <span id="creativity-score">0</span>/50</p>
+                            </div>
+
+                            <div class="category-item mb-4">
+                                <h3>Calculated Risk-Taking</h3>
+                                <div class="progress category-progress mb-2">
+                                    <div class="progress-bar bg-danger" id="risk-progress" role="progressbar" style="width: 0%"></div>
+                                </div>
+                                <p class="category-score">Score: <span id="risk-score">0</span>/50</p>
+                            </div>
+
+                            <div class="category-item mb-4">
+                                <h3>Drive and Determination</h3>
+                                <div class="progress category-progress mb-2">
+                                    <div class="progress-bar bg-primary" id="control-progress" role="progressbar" style="width: 0%"></div>
+                                </div>
+                                <p class="category-score">Score: <span id="control-score">0</span>/50</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button class="btn btn-primary me-2" onclick="window.print()">Print Results</button>
+                            <a href="../index.html" class="btn btn-secondary">Back to Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/results.js"></script>
+</body>
+</html>

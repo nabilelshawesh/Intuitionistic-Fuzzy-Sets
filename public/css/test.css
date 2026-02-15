@@ -1,0 +1,108 @@
+/* Test Page Specific Styles */
+.question-item {
+    animation: fadeIn 0.5s ease-out;
+}
+
+.options-container {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.form-check {
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.form-check:hover {
+    background-color: #e9ecef;
+}
+
+.form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 0.3em;
+}
+
+.form-check-label {
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.progress {
+    height: 0.8rem;
+    border-radius: 1rem;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+.question-text {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* Button Styles */
+#prev-btn, #next-btn {
+    min-width: 120px;
+    border-radius: 25px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#prev-btn:hover, #next-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#prev-btn:disabled {
+    opacity: 0.6;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Navigation Progress */
+.navbar-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .question-text {
+        font-size: 1.1rem;
+    }
+
+    .form-check-label {
+        font-size: 1rem;
+    }
+
+    .form-check {
+        padding: 0.6rem 1rem;
+    }
+
+    .options-container {
+        padding: 1rem;
+    }
+}
+
+/* Animation for question transitions */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

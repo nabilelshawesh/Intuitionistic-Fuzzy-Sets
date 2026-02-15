@@ -1,0 +1,141 @@
+/* Results Page Specific Styles */
+.overall-score {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.overall-progress {
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: #e9ecef;
+}
+
+.score-text {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+/* Category Styles */
+.category-item {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-2px);
+}
+
+.category-item h3 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.category-progress {
+    height: 1.2rem;
+    border-radius: 0.6rem;
+}
+
+.category-score {
+    font-size: 1rem;
+    color: #5a6c7d;
+    margin: 0;
+}
+
+/* Recommendations Section */
+.recommendations {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+#recommendations-content {
+    border-left: 4px solid #3498db;
+}
+
+/* Print Styles */
+@media print {
+    .btn {
+        display: none;
+    }
+
+    .card {
+        box-shadow: none !important;
+    }
+
+    .category-item {
+        break-inside: avoid;
+    }
+
+    .navbar {
+        display: none;
+    }
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.overall-score,
+.category-item,
+.recommendations {
+    animation: slideIn 0.6s ease-out forwards;
+}
+
+/* Progress Bar Animations */
+.progress-bar {
+    transition: width 1s ease-in-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .overall-score {
+        padding: 1rem;
+    }
+
+    .category-item {
+        padding: 1rem;
+    }
+
+    .score-text {
+        font-size: 1.1rem;
+    }
+
+    .category-item h3 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Enhanced Visual Feedback */
+.progress-bar {
+    background-image: linear-gradient(45deg, 
+        rgba(255,255,255,.15) 25%, 
+        transparent 25%, 
+        transparent 50%, 
+        rgba(255,255,255,.15) 50%, 
+        rgba(255,255,255,.15) 75%, 
+        transparent 75%, 
+        transparent);
+    background-size: 1rem 1rem;
+    animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+    from { background-position: 1rem 0; }
+    to { background-position: 0 0; }
+}
